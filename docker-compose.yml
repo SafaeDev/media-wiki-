@@ -34,10 +34,10 @@ services:
     restart: always
     environment:
       # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
-      MYSQL_DATABASE: my_wiki
-      MYSQL_USER: wikiuser
-      MYSQL_PASSWORD: example
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: wiki
+      MYSQL_USER: safae
+      MYSQL_PASSWORD: mbp
+      MYSQL_RANDOM_ROOT_PASSWORD: mbp
     volumes:
       - db:/var/lib/mysql
 
