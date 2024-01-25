@@ -4,17 +4,13 @@
 #   (or "http://$(docker-machine ip):8080" if using docker-machine)
 version: '3'
 services:
- php:
-   build: .
-   volumes: 
-     - ./:/var/www/html
-     - /var/log/apache2/app:/var/log/apache2/
-   ports:
-     - 8090:80
-  web:
-    image: httpd
-    ports:
-      - "9000:80"
+ #php:
+  # build: .
+  # volumes: 
+   #  - ./:/var/www/html
+   #  - /var/log/apache2/app:/var/log/apache2/
+   #ports:
+    # - 8090:80
   mediawiki:
     image: mediawiki
     restart: always
