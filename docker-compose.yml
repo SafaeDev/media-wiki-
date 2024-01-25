@@ -4,6 +4,10 @@
 #   (or "http://$(docker-machine ip):8080" if using docker-machine)
 version: '3'
 services:
+  web:
+    image: httpd
+    ports:
+      - "9000:80"
   mediawiki:
     image: mediawiki
     restart: always
